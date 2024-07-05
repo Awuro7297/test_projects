@@ -117,7 +117,7 @@ button{
     margin-right: auto;
     border: 3px solid green;
     /* background-color: gray; */
-    width: 1002px;
+    width: 1000px;
 
 
   }
@@ -126,6 +126,10 @@ button{
     padding-left: 50px;
     padding-right: 50px;
 
+  }
+
+  .results{
+    background-image: url(/assets/background\ \(1\).png);
   }
   
 .services,
@@ -212,3 +216,60 @@ textarea{
 .copyright{
     text-align: center;
 }
+
+/* ============positioning section================== */
+
+.positioning{
+ position: relative;
+ /* width: 100%;
+ height: 100%; */
+}
+
+.pentagon,
+.text{
+    position: absolute;
+    /* width: 200px;
+    height: 200px; */
+
+}
+.pentagon{
+   z-index: 1;
+   /* top: 100px;
+   left: 50px; */
+
+}
+
+.text{
+    z-index: 2;
+    top:60px;
+    left: 100px;
+    
+}
+
+.text h1{
+    font-size: 100px;
+    color: #071629;
+}
+/* ====================text color styles for sections ================*/
+.top_container a,
+.top_container,
+.results
+{
+    color: var(--col-white);
+    text-decoration: none;
+    
+}
+
+
+
+/* ==================animations============= */
+.top_container a:hover{
+    color: var(--col-red);
+}
+
+button:hover{
+    background-color: var(--col-white);
+    color: var(--col-red);
+}
+
+
